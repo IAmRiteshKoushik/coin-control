@@ -7,7 +7,7 @@ export default function RootLayout() {
   // on the same level are considered as child components
   return (
     <Tabs>
-      <Tabs.Screen name="index" options={{
+      <Tabs.Screen name="allocations" options={{
         title: "Allocations",
         tabBarIcon: ({ size, color }) => (
           <MaterialIcons
@@ -16,6 +16,7 @@ export default function RootLayout() {
             color={color}
           />
         ),
+        headerShown: false,
       }}
       />
       <Tabs.Screen name="accounts" options={{
@@ -26,8 +27,12 @@ export default function RootLayout() {
             size={size}
             color={color}
           />
-        )
+        ),
+        headerShown: false,
       }}
+      />
+      <Tabs.Screen name="index"
+        options={{ href: null }}
       />
     </Tabs>
   );
