@@ -28,7 +28,7 @@ export default function RootLayout() {
             color={color}
           />
         ),
-        headerShown: false,
+        headerShown: true,
       }}
       />
       <Tabs.Screen name="index"
