@@ -36,3 +36,9 @@ yarn-error.*
 *.tsbuildinfo
 
 app-example
+
+# Expo is pushing for continuous build generation. Thus we should never 
+# be comitting these folders and insetead generate them on the fly as part 
+# of the CI pipeline
+ios
+android
